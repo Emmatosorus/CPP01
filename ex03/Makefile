@@ -1,6 +1,6 @@
-NAME = moar_braiiinnzz
+NAME = violence
 CPP = c++
-CPP_FLAGS = -Wall -Wextra -Werror -std=c++98 -g
+CPP_FLAGS = -Wall -Wextra -Werror -std=c++98
 OBJ_DIR = .obj/
 
 # ---------- Sources --------- #
