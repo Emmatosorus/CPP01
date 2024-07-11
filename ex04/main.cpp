@@ -22,7 +22,7 @@ int	get_file(std::string *text, std::string file)
 	std::ifstream	ifs(file.c_str());
 	if (!ifs)
 	{
-		std::cout << "Please enter valid file" << std::endl;
+		std::cout << "Please enter valid file1" << std::endl;
 		return (1);
 	}
 	*text += ifs.get();
