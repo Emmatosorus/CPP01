@@ -1,8 +1,9 @@
 #include "Zombie.h"
 
-Zombie *Zombie::newZombie(std::string name) {
+Zombie *newZombie(std::string name)
+{
 	Zombie *newZombie = new Zombie;
 
-	newZombie->name = name;
+	newZombie->set_name(name);
 	return (newZombie);
 }

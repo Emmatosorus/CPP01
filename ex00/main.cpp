@@ -4,10 +4,9 @@ int	main(void)
 {
 	std::string name1 = "Steve";
 	std::string name2 = "Bob";
-	Zombie *allocated = NULL;
+	Zombie *allocated  = newZombie(name1);
 
-	allocated = (*allocated).newZombie(name1);
-	allocated->annouce();
+	allocated->announce();
 	delete allocated;
 	allocated->randomChump(name2);
 
