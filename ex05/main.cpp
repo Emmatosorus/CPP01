@@ -4,12 +4,12 @@ int main(void)
 {
 	Harl bot1;
 
-	bot1.complain("debug");
+	bot1.complain("DEBUG");
 	std::cout << std::endl;
-	bot1.complain("info");
+	bot1.complain("INFO");
 	std::cout << std::endl;
-	bot1.complain("warning");
+	bot1.complain("WARNING");
 	std::cout << std::endl;
-	bot1.complain("error");
+	bot1.complain("ERROR");
 	std::cout << std::endl;
 }
