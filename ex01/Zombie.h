@@ -8,12 +8,13 @@ class Zombie {
   	Zombie();
 	~Zombie();
 
-  	void	annouce( void );
+  	void	announce( void );
 	void	setName(std::string name);
-  	Zombie	*zombieHorde( int N, std::string name );
 
   private:
   	std::string name;
 };
+
+Zombie	*zombieHorde( int N, std::string name );
 
 #endif //ZOMBIE_H

@@ -2,11 +2,13 @@
 
 HumanB::HumanB( void )
 {
+	weapon = NULL;
 }
 
 HumanB::HumanB( std::string new_name )
 {
 	setName( new_name );
+	weapon = NULL;
 }
 
 HumanB::~HumanB()
@@ -25,6 +27,9 @@ void	HumanB::setWeapon(Weapon& new_weapon )
 
 void	HumanB::attack()
 {
-	std::cout << name << " attacks with their " << weapon->getType() << std::endl;
+	if (weapon)
+		std::cout << name << " attacks with their " << weapon->getType() << std::endl;
+	else
+		std::cout << name << " doesn't have a weapon" << std::endl;
 }
 
