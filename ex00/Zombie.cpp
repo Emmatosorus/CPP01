@@ -1,17 +1,26 @@
 #include "Zombie.h"
 
-Zombie::Zombie() {
+Zombie::Zombie()
+{
 }
 
-Zombie::~Zombie() {
-	std::cout << name << " has died.." << std::endl;
+Zombie::~Zombie()
+{
+	if (!name.empty())
+		std::cout << name << " has died.." << std::endl;
+	else
+		std::cout << "<unamed>" << " has died.." << std::endl;
 }
 
-void	Zombie::set_name(const std::string & name)
+void Zombie::announce()
+{
+	if (!name.empty())
+		std::cout << name << ": BraiiiiiiinnnzzzZ..." << std::endl;
+	else
+		std::cout << "<unamed>" << ": BraiiiiiiinnnzzzZ..." << std::endl;
+}
+
+void	Zombie::setName(const std::string & name)
 {
 	this->name = name;
-}
-
-void Zombie::announce() {
-	std::cout << name << ": BraiiiiiiinnnzzzZ..." << std::endl;
 }
