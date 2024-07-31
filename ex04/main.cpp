@@ -8,12 +8,12 @@ void	replace(std::string *text, std::string s1, std::string s2)
 	size_t size = text->size();
 	while (i < size)
 	{
-		pos = text->find(s1);
+		pos = text->find(s1, i);
 		if (pos == std::string::npos)
 			return ;
 		text->erase(pos, s1.length());
 		text->insert(pos, s2);
-		i += s2.length() + 1;
+		i = pos + s2.length() + 1;
 	}
 }
 
